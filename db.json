@@ -1,0 +1,20 @@
+{
+    "dates": [
+        {
+            "id": 1,
+            "title": "JavaScript",
+            "person": "Mariana",
+            "state": "finished",
+            "date": "02-06-2022",
+            "created": "31-12-2022"
+        },
+        {
+            "id": 2,
+            "title": "Movile",
+            "person": "Carlos",
+            "state": "run",
+            "date": "02-06-2022",
+            "created": "31-12-2022"
+        }
+    ]
+}

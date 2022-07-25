@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador Trello</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="nav">
+        <img src="" alt="">
+        <img src="" alt="">
+        <button class="btn" id="btnTask">Nueva Tarea</button>
+    </nav>
+    <!--Fin Navbar-->
+
+    <!--Columnas Tareas-->
+    <div class="columns">
+        <div class="column-app">
+            <h2 class="col-title">Por Ejecutar</h2>
+            <div class="col-tasks" id="runTasks"></div>
+        </div>
+
+        <div class="column-app">
+            <h2 class="col-title">En Progreso</h2>
+            <div class="col-tasks" id="progressTasks"></div>
+        </div>
+
+        <div class="column-app">
+            <h2 class="col-title">Realizadas</h2>
+            <div class="col-tasks" id="madeTasks"></div>
+        </div>
+    </div>
+    <!--Fin-->
+
+    <!--Modal -- Formulario-->
+    <div class="form" id="modalTask">
+        <h2 class="form-title">Crear Tarea</h2>
+        <form class="form-task" id="formNewTask">
+            <div class="form-select">
+                <label for="titleTask" class="form-task-label">Título</label>
+                <input id="titleTask" type="text" class="form-task-input" />
+            </div>
+
+            <div class="form-select">
+                <label for="responsibleTask" class="form-task-label">Responsable</label>
+                <input name="responsibleTask" id="responsibleTask">
+            </div>
+            <!-- 
+            <div class="form-select">
+                <label for="descriptionTask" class="form-task-label">Descripción</label>
+                <textarea class="" name="descriptionTask" id="descriptionTask cols=" 3" rows="3"
+                    placeholder="Haz una breve descripción"></textarea>
+            </div> -->
+
+            <!-- <div class="form-select">
+                <label for="dateTask" class="form-task-label">Plazo entrega</label>
+                <input type="date" id="dateTask">
+            </div> -->
+
+            <div class="form-select">
+                <div class="form-task-buttons">
+                    <button class="button" type="submit">Guardar</button>
+                    <button class="button" type="reset" id="buttonCancel">Cancelar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="JS/modal-form.js"></script>
+</body>
+
+</html>
