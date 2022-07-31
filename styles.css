@@ -1,5 +1,73 @@
+body {
+    background-image: linear-gradient(180deg, #ff8ee6 0, #f17ee0 25%, #d86cd8 50%, #be5bd0 75%, #a44fcb 100%);
+}
+
 .columns {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    min-height: 16rem;
+    grid-template-columns: repeat(4, 1fr);
+    width: 90%;
+    gap: 2rem;
+}
+
+.column-app {
+    background-color: #f16fd5;
+    height: 18rem;
+    height: 500px;
+    border-radius: 2%;
+    border: dashed #7607a2;
+}
+
+.col-title {
+    font-size: 30px;
+    text-align: center;
+    color: azure;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.col-tasks {
+    text-align: center;
+    font-size: 16px;
+}
+
+.form {
+    background-color: #b436e6;
+    width: 30vw;
+    transition: 300ms ease-in-out;
+}
+
+.form-title {
+    font-size: 25px;
+    text-align: center;
+    color: azure;
+}
+
+.form-select {
+    text-align: center;
+    font-size: 17px;
+    font-family: cursive;
+}
+
+.form-task-input {
+    padding: 1%;
+    width: 50%;
+}
+
+.form-textarea {
+    padding: 5%;
+    width: 40%;
+}
+
+.new-card {
+    background-color: #ff8ee7d2;
+    border-radius: 3%;
+}
+
+.new-card:hover {
+    transform: scale(1.01);
+}
+
+.new-card__title {
+    color: #e32b87;
+    font-size: 20px;
+    font-family: cursive;
 }
